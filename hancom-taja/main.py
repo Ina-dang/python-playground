@@ -16,6 +16,7 @@ class Word:
             arcade.color.WHITE,
             18,
             font_name="LanaPixel",
+            anchor_x="center",
         )
         # 단어마다 스피드 다르게
         self.speed = random.randint(30, 70)
@@ -50,7 +51,8 @@ class Game(arcade.Window):
             "맹서기",
             "프로그래밍",
         ]
-        self.word = Word("이나당", SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2)
+
+        self.input_box = ""
 
     def on_update(self, dt):
         if len(self.words) < 10 and random.random() < 0.02:
@@ -71,6 +73,42 @@ class Game(arcade.Window):
 
         for word in self.words:
             word.draw()
+
+        arcade.draw_rectangle_filled(
+            SCREEN_WIDTH // 2,
+            30,
+            SCREEN_WIDTH,
+            60,
+            arcade.color.LIGHT_GRAY,
+        )
+        arcade.draw_text(
+            self.input_box,
+            SCREEN_WIDTH // 2,
+            30,
+            arcade.color.BLACK,
+            24,
+            font_name="LanaPixel",
+            anchor_x="center",
+        )
+
+    def on_text(self, text):
+        self.input_box += text
+
+    def on_key_press(self, key, modifiers):
+        if key == arcade.key.BACKSPACE:
+            self.input_box = self.input_box[:-1]
+
+        elif key == arcade.key.ENTER:
+            for word in self.words:
+                if word.text == self.input_box.strip():
+                    self.words.remove(word)
+                    self.input_box = ""
+                    return
+
+            self.input_box = ""
+
+        elif key == arcade.key.SPACE:
+            self.input_box += ""
 
 
 window = Game()
