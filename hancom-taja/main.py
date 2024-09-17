@@ -36,15 +36,41 @@ class Game(arcade.Window):
 
         arcade.set_background_color(arcade.color.DARK_BLUE)
 
+        self.words = []
+        self.word_list = [
+            "이나당",
+            "무니",
+            "응교",
+            "동영",
+            "밍기",
+            "쨈민니",
+            "한컴타자",
+            "산성비",
+            "빡새우",
+            "맹서기",
+            "프로그래밍",
+        ]
         self.word = Word("이나당", SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2)
 
     def on_update(self, dt):
-        self.word.update(dt)
+        if len(self.words) < 10 and random.random() < 0.02:
+            word = random.choice(self.word_list)
+            x = random.randint(100, SCREEN_WIDTH - 100)
+            y = SCREEN_HEIGHT
+            new_word = Word(word, x, y)
+            self.words.append(new_word)
+
+        for word in self.words:
+            word.update(dt)
+
+            if word.sprite.y < 0:
+                self.words.remove(word)
 
     def on_draw(self):
         self.clear()
 
-        self.word.draw()
+        for word in self.words:
+            word.draw()
 
 
 window = Game()
