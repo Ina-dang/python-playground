@@ -6,6 +6,38 @@ SCREEN_HEIGHT = 720
 SCREEN_TITLE = "산성비"
 
 
+class Confetti:
+    def __init__(self, x, y):
+        self.confetti = [
+            arcade.SpriteSolidColor(10, 10, arcade.color.PURPLE_MOUNTAIN_MAJESTY),
+            arcade.SpriteSolidColor(10, 10, arcade.color.FUCHSIA_PINK),
+            arcade.SpriteSolidColor(10, 10, arcade.color.LIGHT_SALMON),
+            arcade.SpriteSolidColor(10, 10, arcade.color.GREEN_YELLOW),
+        ]
+
+        for color in self.confetti:
+            color.center_x = x
+            color.center_y = y
+
+        self.y = y
+
+        self.direction_x = []
+        self.speeds = []
+
+        for _ in self.confetti:
+            self.direction_x.append(random.random() * 30 - 5)  # -5 ~ +5
+            self.speeds.append(random.random() * 10 + 10)  # 10 ~ 20
+
+    def draw(self):
+        for c in self.confetti:
+            c.draw()
+
+    def update(self, dt):
+        for c, d, s in zip(self.confetti, self.direction_x, self.speeds):
+            c.center_x += d * dt * 10
+            c.center_y = c.center_y - s
+
+
 class Word:
     def __init__(self, text, x, y):
         self.text = text
@@ -56,6 +88,8 @@ class Game(arcade.Window):
 
         self.shake_time = 0
 
+        self.confetti = []
+
     def on_update(self, dt):
         if len(self.words) < 10 and random.random() < 0.02:
             word = random.choice(self.word_list)
@@ -72,6 +106,12 @@ class Game(arcade.Window):
 
         if self.shake_time > 0:
             self.shake_time -= dt
+
+        for c in self.confetti:
+            c.update(dt)
+
+            if c.y < 0:
+                self.confetti.remopve(c)
 
     def on_draw(self):
         self.clear()
@@ -104,6 +144,9 @@ class Game(arcade.Window):
                 SCREEN_HEIGHT + random.randint(0, 5),
             )
 
+        for c in self.confetti:
+            c.draw()
+
     def on_text(self, text):
         self.input_box += text
 
@@ -115,6 +158,9 @@ class Game(arcade.Window):
             for word in self.words:
                 if word.text == self.input_box.strip():
                     self.words.remove(word)
+
+                    self.confetti.append(Confetti(word.sprite.x, word.sprite.y))
+
                     self.input_box = ""
                     return
 
