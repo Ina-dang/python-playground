@@ -54,6 +54,8 @@ class Game(arcade.Window):
 
         self.input_box = ""
 
+        self.shake_time = 0
+
     def on_update(self, dt):
         if len(self.words) < 10 and random.random() < 0.02:
             word = random.choice(self.word_list)
@@ -67,6 +69,9 @@ class Game(arcade.Window):
 
             if word.sprite.y < 0:
                 self.words.remove(word)
+
+        if self.shake_time > 0:
+            self.shake_time -= dt
 
     def on_draw(self):
         self.clear()
@@ -91,6 +96,14 @@ class Game(arcade.Window):
             anchor_x="center",
         )
 
+        if self.shake_time > 0:
+            arcade.set_viewport(
+                -random.randint(0, 5),
+                SCREEN_WIDTH + random.randint(0, 5),
+                -random.randint(0, 5),
+                SCREEN_HEIGHT + random.randint(0, 5),
+            )
+
     def on_text(self, text):
         self.input_box += text
 
@@ -105,6 +118,7 @@ class Game(arcade.Window):
                     self.input_box = ""
                     return
 
+            self.shake_time = 0.3
             self.input_box = ""
 
         elif key == arcade.key.SPACE:
