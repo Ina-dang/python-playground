@@ -1,5 +1,6 @@
 import streamlit as st
 import pymupdf
+from openai import OpenAI
 
 
 # pdf 불러오기 및 텍스트 추출 함수
@@ -38,6 +39,19 @@ def main():
             st.session_state.images = []
         if "page_number" not in st.session_state:
             st.session_state.page_number = 1
+        client = None
+        # OpenAI 클라이언트 생성
+        if openai_api_key:
+            client = OpenAI(api_key=openai_api_key)
+
+        # 문서 번역/요약 함수 정의
+        def process_text(prompt, text):
+            content = prompt + "\n" + text
+            response = client.chat.completions.create(
+                model="gpt-4o-mini",
+                messages=[{"role": "user", "content": content}],
+            )
+            return response.choices[0].message.content
 
         # pdf 파일이 업로드된 경우의 조건부 로직
         if pdf_file:
@@ -67,9 +81,31 @@ def main():
             )
         # 오른쪽 열: 페이지 텍스트 출력
         with right_col:
-            st.subheader("텍스트 추출")
+            st.subheader("PDF 요약")
             pdf_text = get_text_from_pdf(pdf_data, st.session_state.page_number)
-            st.write(pdf_text)
+
+            # 프롬프트 입력 위젯 생성
+            start_prompt = """다음 문서를 개조식으로 요약하되 한글로 번역해주세요.
+- ~음, ~했음 등의 어조를 사용하세요.
+- 가장 중요한 내용을 중심으로 간결하게 요약하세요.
+- 마크다운을 이용해 구조화된 요약 결과를 보여주세요.
+"""
+
+            prompt = st.text_area("프롬프트 입력:", height=120, value=start_prompt)
+            # 요약 버튼 및 결과 표시
+            if st.button("요약"):
+                if client is None:
+                    st.error("유효한 API Key를 입력하세요.")
+                elif not pdf_text.strip():
+                    st.error("문서를 입력하세요.")
+                else:
+                    with st.spinner("요약 중..."):
+                        try:
+                            result = process_text(prompt, pdf_text)
+                            st.subheader("요약 결과")
+                            st.write(result)
+                        except Exception as e:
+                            st.error(f"요약 중 오류 발생: {e}")
 
 
 if __name__ == "__main__":
