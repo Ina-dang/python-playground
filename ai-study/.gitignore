@@ -4,4 +4,7 @@ __pycache__/
 *.pyc
 *.pdf
 *.png
+!screenshots/
+!screenshots/*.png
 *.mp3
+capture_streamlit_screenshots.py
