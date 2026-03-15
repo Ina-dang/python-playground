@@ -1,0 +1,74 @@
+import streamlit as st
+from openai import OpenAI
+
+# 세션 상태 선언
+if "interview_question" not in st.session_state:
+    st.session_state.interview_question = ""
+if "client" not in st.session_state:
+    st.session_state.clinet = None
+
+
+# 인터뷰 질문 설정 함수
+def process_text(prompt: str, client):
+    response = client.chat.completions.create(
+        model="gpt-4o-mini", messages=[{"role": "user", "content": prompt}]
+    )
+    return response.choices[0].message.content
+
+
+def main():
+    st.set_page_config(layout="wide")
+    st.title("면접 준비 도우미")
+    with st.sidebar:
+        openai_api_key = st.text_input("OpenAI API Key", type="password")
+        st.write("[OpenAI API Key 받기](https://platform.openai.com/account/api-keys)")
+
+    default_job_info = """데이터 분석가 직무 정보:
+  1. 주요 업무
+  - 데이터 수집 및 정제: 다양한 소스에서 데이터를 수집하고 분석 가능한 형태로 정제
+  - 데이터 분석: 통계, 머신러닝, 인공지능 기법을 이용해 데이터를 분석하고 패턴을 찾음
+  - 시각화 및 보고: 분석 결과를 이해하기 쉽게 시각화하고 보고서로 작성해 의사결정자에게 전달
+  2. 필요 역량
+  - 기술적 역량: 통계학, 수학, 프로그래밍 언어(R, 파이썬 등), 데이터베이스 관리(SQL 등)
+  - 문제 해결 능력: 데이터를 통해 비즈니스 문제를 분석하고 해결책 제시
+  """
+
+    # 직무 정보 입력
+    user_input = st.text_area(
+        "직무 정보를 입력하세요.", value=default_job_info, height=200
+    )
+
+    if st.button("면접 질문 생성"):
+        if not openai_api_key:
+            st.error("OpenAI API Key를 입력해주세요.")
+            st.stop()
+        if not user_input:
+            st.error("직무 정보를 입력해주세요.")
+            st.stop()
+
+        # OpenAI 클라이언트 초기화
+        st.session_state.client = OpenAI(api_key=openai_api_key)
+
+        prompt = f"""
+        너는 채용 전문 컨설턴트야.
+        주어진 직무 정보를 바탕으로 면접 시 예상 질문 하나를 생성해줘.
+        - 3분 이내로 답변이 가능한 질문을 생성해.
+        - 단순히 질문만 출력해.
+        - 직무 정보: {user_input}
+        """
+
+        # 질문 생성
+        with st.spinner("면접 질문 생성 중..."):
+            st.session_state.interview_question = process_text(
+                prompt, st.session_state.client
+            )
+            st.success("면접 질문 생성 완료!")
+
+    # 질문 출력
+    if st.session_state.interview_question:
+        st.write("### 예상 면접 질문")
+        st.write(st.session_state.interview_question)
+
+
+if __name__ == "__main__":
+    main()
