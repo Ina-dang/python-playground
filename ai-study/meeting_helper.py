@@ -6,6 +6,8 @@ if "interview_question" not in st.session_state:
     st.session_state.interview_question = ""
 if "client" not in st.session_state:
     st.session_state.clinet = None
+if "transcription" not in st.session_state:
+    st.session_state.transcription = None
 
 
 # 인터뷰 질문 설정 함수
@@ -68,6 +70,41 @@ def main():
     if st.session_state.interview_question:
         st.write("### 예상 면접 질문")
         st.write(st.session_state.interview_question)
+
+        st.write("### 🎤🎤🎤 답변 녹음 후 평가받기")
+        audio = st.audio_input("답변을 녹음하세요.")
+
+        if audio and st.button("답변 평가하기"):
+            if not openai_api_key:
+                st.error("OpenAI API Key를 입력해주세요.")
+                st.stop()
+            with st.spinner("답변 평가 중..."):
+                st.session_state.transcription = (
+                    st.session_state.client.audio.transcriptions.create(
+                        model="whisper-1", file=audio, response_format="text"
+                    )
+                )
+                # 답변 분석을 위한 프롬프트 작성
+                evaluation_prompt = f"""
+                너는 전문 면접관이야.
+                지원자가 다음 질문에 대한 답변을 녹음해 제공했어.
+                질문: {st.session_state.interview_question}
+                지원자의 답변을 다음 기준으로 평가해줘.
+                1. 답변의 논리적 구조
+                2. 면접 질문과의 관련성
+                3. 개선할 점
+                - 마크다운 형식으로 정리해.
+                - 장점과 단점을 명확히 구분해서 설명해.
+                지원자의 답변: {st.session_state.transcription}
+                """
+
+                # 답변 분석 및 출력
+                evaluation = process_text(evaluation_prompt, st.session_state.client)
+                tab1, tab2 = st.tabs(["답변 분석", "답변 원본"])
+                with tab1:
+                    st.write(evaluation)
+                with tab2:
+                    st.write(st.session_state.transcription)
 
 
 if __name__ == "__main__":
