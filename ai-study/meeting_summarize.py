@@ -1,13 +1,28 @@
 from openai import OpenAI
 import streamlit as st
-import re
 
 
-# 줄바꿈 함수
-def format_transcription(text):
-    # sentences = text.replace(". ", ".  \n")
-    sentences = re.sub(r"\.\s+", ".  \n", text)
-    return sentences
+# 화자 추정 기반 대화 정리 함수
+def format_transcription_by_speaker(text, client):
+    prompt = f"""
+다음은 회의에서 녹음된 텍스트입니다.
+화자를 정확히 식별할 수 없다는 점을 감안해서, 문맥을 바탕으로 화자를 추정해 대화를 정리해주세요.
+
+조건:
+- 반드시 `참가자1: 내용` 또는 `참가자2: 내용` 형식으로만 작성할 것
+- 필요하면 `참가자3` 이상도 사용할 수 있음
+- 한 줄에 한 화자 발화만 작성할 것
+- 불필요한 설명, 주석, 서론은 쓰지 말 것
+- 문장이 너무 길면 자연스럽게 나눌 것
+- 원문 내용을 최대한 유지할 것
+
+원문:
+{text}
+"""
+    response = client.chat.completions.create(
+        model="gpt-4o-mini", messages=[{"role": "user", "content": prompt}]
+    )
+    return response.choices[0].message.content
 
 
 # 텍스트 요약 함수
@@ -45,13 +60,15 @@ def main():
             transcription = client.audio.transcriptions.create(
                 model="whisper-1", file=mp3_file, response_format="text"
             )
+            speaker_text = format_transcription_by_speaker(transcription, client)
+            summary_text = summarize_text(transcription, client)
 
             # 두개의 탭 생성 및 결과 출력
             tab1, tab2 = st.tabs(["원본텍스트", "요약본"])
             with tab1:
-                st.write(format_transcription(transcription))
+                st.write(speaker_text)
             with tab2:
-                st.write(summarize_text(transcription, client))
+                st.write(summary_text)
 
 
 if __name__ == "__main__":
