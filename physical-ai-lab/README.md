@@ -7,6 +7,7 @@
 | 날짜       | 단계                 | Markdown 교재                              | PDF                                                                                |
 | ---------- | -------------------- | ------------------------------------------ | ---------------------------------------------------------------------------------- |
 | 2026-10-17 | Day 01 · 센서와 필터 | [교재 보기](day01-sensor-filter/README.md) | [PDF 보기](https://drive.google.com/file/d/1ZHcYnh1BMP7-ub1c5LRG7SJ-uH7xFNqW/view) |
+| 2026-10-18 | Day 02 · NumPy 마스크 | [교재 보기](day02-numpy-mask/README.md) | [PDF 보기](https://drive.google.com/file/d/1KAGzsTku40bNxZVhgro7cVw9okCphE52/view?usp=drivesdk) |
 
 ## 자료 구성
 
