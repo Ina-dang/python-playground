@@ -11,6 +11,7 @@
 | 2026-10-19 | Day 03 · NumPy 행 선택과 shape | [교재 보기](day03-numpy-row-selection/README.md) | [PDF 보기](https://drive.google.com/file/d/1mfK3mN6NeWmtggCqmdJuQAMxsw0Ro_pe/view?usp=drivesdk) |
 | 2026-10-20 | Day 4 NumPy 온도 보정 | [교재 보기](day04-numpy-calibration/README.md) | [PDF 보기](https://drive.google.com/file/d/1E7ylfdYdE_jzPRmbsZouLfdTfbagfPWV/view) |
 | 2026-10-21 | Day05 센서별 NumPy 온도 보정 | [교재 보기](day05-numpy-sensor-offsets/README.md) | [PDF 보기](https://drive.google.com/file/d/1x8IbgzXcSb7YfhfKP6auNvt7JdCEXylW/view) |
+| 2026-10-23 | Day06 조건에 맞는 센서만 고르기 | [교재 보기](day06-numpy-boolean-mask/README.md) | [PDF 보기](https://drive.google.com/file/d/1fzQoNkrwuY9QgLYI3O85xyNmLTyWKVVN/view?usp=drivesdk) |
 
 ## 자료 구성
 
