@@ -12,6 +12,7 @@
 | 2026-10-20 | Day 4 NumPy 온도 보정 | [교재 보기](day04-numpy-calibration/README.md) | [PDF 보기](https://drive.google.com/file/d/1E7ylfdYdE_jzPRmbsZouLfdTfbagfPWV/view) |
 | 2026-10-21 | Day05 센서별 NumPy 온도 보정 | [교재 보기](day05-numpy-sensor-offsets/README.md) | [PDF 보기](https://drive.google.com/file/d/1x8IbgzXcSb7YfhfKP6auNvt7JdCEXylW/view) |
 | 2026-10-23 | Day06 조건에 맞는 센서만 고르기 | [교재 보기](day06-numpy-boolean-mask/README.md) | [PDF 보기](https://drive.google.com/file/d/1fzQoNkrwuY9QgLYI3O85xyNmLTyWKVVN/view?usp=drivesdk) |
+| 2026-10-25 | Day07 두 조건으로 온도 범위 고르기 | [교재 보기](day07-numpy-range-mask/README.md) | [PDF 보기](https://drive.google.com/file/d/1S_yVZrkrCX9hAHLYTN-nI4oOzs0t9GqZ/view?usp=drivesdk) |
 
 ## 자료 구성
 
