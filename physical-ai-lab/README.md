@@ -14,6 +14,7 @@
 | 2026-10-23 | Day06 조건에 맞는 센서만 고르기 | [교재 보기](day06-numpy-boolean-mask/README.md) | [PDF 보기](https://drive.google.com/file/d/1fzQoNkrwuY9QgLYI3O85xyNmLTyWKVVN/view?usp=drivesdk) |
 | 2026-10-25 | Day07 두 조건으로 온도 범위 고르기 | [교재 보기](day07-numpy-range-mask/README.md) | [PDF 보기](https://drive.google.com/file/d/1S_yVZrkrCX9hAHLYTN-nI4oOzs0t9GqZ/view?usp=drivesdk) |
 | 2026-10-26 | Day08 원본을 지키며 조건 선택 확인하기 | [교재 보기](day08-numpy-check-and-select/README.md) | [PDF 보기](https://drive.google.com/file/d/1KTYkJV0A9G2aGfniYQvIZwQfYwOEJI4d/view?usp=drivesdk) |
+| 2026-10-27 | Day09 열마다 센서 값 보정하기 | [교재 보기](./day09-numpy-column-calibration/README.md) | [PDF 보기](https://drive.google.com/file/d/1rMDNcWhRFO-QEaRR7USugpu5mMvnosbb/view?usp=drivesdk) |
 
 ## 자료 구성
 
