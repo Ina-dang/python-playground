@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360">
+<rect width="1200" height="360" fill="#f5f8fc"/>
+<text x="30" y="50" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="30" fill="#17324d">left.correct(9)가 실행되는 흐름</text>
+<rect x="30" y="90" width="340" height="190" rx="14" fill="#e4edff" stroke="#aabed5"/>
+<text x="50" y="133" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="25" fill="#17324d">호출</text>
+<text x="50" y="176" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="24" fill="#17324d">left.correct(9)</text>
+<text x="50" y="212" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="24" fill="#17324d">raw = 9</text>
+<text x="380" y="200" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="30" fill="#17324d">&gt;</text>
+<rect x="430" y="90" width="340" height="190" rx="14" fill="#fff0d8" stroke="#aabed5"/>
+<text x="450" y="133" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="25" fill="#17324d">현재 객체</text>
+<text x="450" y="176" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="24" fill="#17324d">self는 left</text>
+<text x="450" y="212" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="24" fill="#17324d">self.offset = 1</text>
+<text x="780" y="200" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="30" fill="#17324d">&gt;</text>
+<rect x="830" y="90" width="340" height="190" rx="14" fill="#e4f4ec" stroke="#aabed5"/>
+<text x="850" y="133" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="25" fill="#17324d">계산과 반환</text>
+<text x="850" y="176" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="24" fill="#17324d">9 - 1</text>
+<text x="850" y="212" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="24" fill="#17324d">결과 8</text>
+<text x="30" y="331" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="22" fill="#17324d">self는 모든 센서의 공통 이름이 아니라 이번 호출의 객체를 가리켜요.</text>
+</svg>

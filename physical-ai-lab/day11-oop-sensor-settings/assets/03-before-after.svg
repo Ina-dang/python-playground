@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360">
+<rect width="1200" height="360" fill="#f5f8fc"/>
+<text x="30" y="50" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="30" fill="#17324d">left.offset만 바꾸기: 전후 비교</text>
+<rect x="30" y="90" width="340" height="190" rx="14" fill="#e4edff" stroke="#aabed5"/>
+<text x="50" y="133" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="25" fill="#17324d">변경 전</text>
+<text x="50" y="176" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="24" fill="#17324d">left.offset = 1</text>
+<text x="50" y="212" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="24" fill="#17324d">right.offset = 4</text>
+<text x="380" y="200" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="30" fill="#17324d">&gt;</text>
+<rect x="430" y="90" width="340" height="190" rx="14" fill="#fff0d8" stroke="#aabed5"/>
+<text x="450" y="133" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="25" fill="#17324d">바꾼 코드</text>
+<text x="450" y="176" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="24" fill="#17324d">left.offset = 6</text>
+<text x="450" y="212" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="24" fill="#17324d">오른쪽은 건드리지 않음</text>
+<text x="780" y="200" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="30" fill="#17324d">&gt;</text>
+<rect x="830" y="90" width="340" height="190" rx="14" fill="#e4f4ec" stroke="#aabed5"/>
+<text x="850" y="133" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="25" fill="#17324d">변경 후</text>
+<text x="850" y="176" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="24" fill="#17324d">left.offset = 6</text>
+<text x="850" y="212" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="24" fill="#17324d">right.offset = 4</text>
+<text x="30" y="331" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="22" fill="#17324d">Sensor(...)를 각각 호출해 만든 서로 다른 객체를 사용한 경우예요.</text>
+</svg>

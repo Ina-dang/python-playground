@@ -16,6 +16,7 @@
 | 2026-10-26 | Day08 원본을 지키며 조건 선택 확인하기 | [교재 보기](day08-numpy-check-and-select/README.md) | [PDF 보기](https://drive.google.com/file/d/1KTYkJV0A9G2aGfniYQvIZwQfYwOEJI4d/view?usp=drivesdk) |
 | 2026-10-27 | Day09 열마다 센서 값 보정하기 | [교재 보기](./day09-numpy-column-calibration/README.md) | [PDF 보기](https://drive.google.com/file/d/1rMDNcWhRFO-QEaRR7USugpu5mMvnosbb/view?usp=drivesdk) |
 | 2026-10-28 | Day10 센서별 평균과 axis 이해하기 | [교재 보기](./day10-numpy-axis-mean/README.md) | [PDF 보기](https://drive.google.com/file/d/1HsiI13wPuqXJtuk80XInnQ6BtJwK-HeP/view?usp=drivesdk) |
+| 2026-10-29 | Day11 OOP 센서 설정과 계산 | [교재 보기](day11-oop-sensor-settings/README.md) | [PDF 보기](https://drive.google.com/file/d/1D8e0_zGFOmr9ZPd3b9TE1uF_u_jVsXld/view?usp=drivesdk) |
 
 ## 자료 구성
 
