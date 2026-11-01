@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360">
+<rect width="1200" height="360" fill="#f5f8fc"/>
+<text x="30" y="50" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="30" fill="#17324d">등록된 센서마다 이름을 기준으로 처리해요</text>
+<rect x="30" y="90" width="340" height="190" rx="14" fill="#e4edff" stroke="#aabed5"/>
+<text x="50" y="133" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="25" fill="#17324d">등록 정보 읽기</text>
+<text x="50" y="176" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="24" fill="#17324d">name, sensor</text>
+<text x="50" y="212" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="24" fill="#17324d">registry.items()</text>
+<text x="380" y="200" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="30" fill="#17324d">&gt;</text>
+<rect x="430" y="90" width="340" height="190" rx="14" fill="#fff0d8" stroke="#aabed5"/>
+<text x="450" y="133" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="25" fill="#17324d">입력 찾아 계산</text>
+<text x="450" y="176" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="24" fill="#17324d">raw_by_name[name]</text>
+<text x="450" y="212" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="24" fill="#17324d">sensor.apply(raw)</text>
+<text x="780" y="200" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="30" fill="#17324d">&gt;</text>
+<rect x="830" y="90" width="340" height="190" rx="14" fill="#e4f4ec" stroke="#aabed5"/>
+<text x="850" y="133" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="25" fill="#17324d">이름과 함께 반환</text>
+<text x="850" y="176" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="24" fill="#17324d">result[name] = value</text>
+<text x="850" y="212" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="24" fill="#17324d">숫자의 출처 보존</text>
+<text x="30" y="331" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="22" fill="#17324d">출력도 이름표를 붙이면 화면 표시와 기록에서 센서를 구분할 수 있어요.</text>
+</svg>
