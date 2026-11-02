@@ -19,6 +19,7 @@
 | 2026-10-29 | Day11 OOP 센서 설정과 계산 | [교재 보기](day11-oop-sensor-settings/README.md) | [PDF 보기](https://drive.google.com/file/d/1D8e0_zGFOmr9ZPd3b9TE1uF_u_jVsXld/view?usp=drivesdk) |
 | 2026-10-30 | Day12 여러 센서를 순서대로 처리하기 | [교재 보기](day12-oop-sensor-batch/README.md) | [PDF 보기](https://drive.google.com/file/d/1Y66-dML5EZtKEq7mPqtNYbUuRaZhjxwq/view?usp=drivesdk) |
 | 2026-11-01 | Day13 이름으로 센서 입력 연결하기 | [교재 보기](day13-sensor-name-mapping/README.md) | [PDF 보기](https://drive.google.com/file/d/14_r4NrJ_mx8yMb7fHgdtTcpy6zFnnTtB/view?usp=drivesdk) |
+| 2026-11-02 | Day14 시간별 센서 기록 만들기 | [교재 보기](day14-sensor-frame-log/README.md) | [PDF 보기](https://drive.google.com/file/d/1rOdhD4GqfdA8SCtegU6ex-Bb70acgXVA/view?usp=drivesdk) |
 
 ## 자료 구성
 
