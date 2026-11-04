@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360">
+<rect width="1200" height="360" fill="#f5f8fc"/>
+<text x="30" y="50" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="30" fill="#17324d">거리와 속도는 다른 질문에 답해요</text>
+<rect x="30" y="90" width="340" height="190" rx="14" fill="#e4edff" stroke="#aabed5"/>
+<text x="50" y="133" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="25" fill="#17324d">거리 m</text>
+<text x="50" y="176" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="24" fill="#17324d">얼마나 떨어졌나?</text>
+<text x="50" y="212" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="24" fill="#17324d">벽까지 1.2 m</text>
+<text x="380" y="200" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="30" fill="#17324d">&gt;</text>
+<rect x="430" y="90" width="340" height="190" rx="14" fill="#fff0d8" stroke="#aabed5"/>
+<text x="450" y="133" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="25" fill="#17324d">속도 m/s</text>
+<text x="450" y="176" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="24" fill="#17324d">1초에 얼마나 가나?</text>
+<text x="450" y="212" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="24" fill="#17324d">예시 0.2 m/s</text>
+<text x="780" y="200" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="30" fill="#17324d">&gt;</text>
+<rect x="830" y="90" width="340" height="190" rx="14" fill="#e4f4ec" stroke="#aabed5"/>
+<text x="850" y="133" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="25" fill="#17324d">시간 s</text>
+<text x="850" y="176" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="24" fill="#17324d">얼마 동안 가나?</text>
+<text x="850" y="212" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="24" fill="#17324d">0.5 s = 500 ms</text>
+<text x="30" y="331" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="22" fill="#17324d">거리 = 일정한 속도 × 시간. 명령만 출력하면 이 계산도 자동 실행되지 않아요.</text>
+</svg>

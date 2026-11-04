@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360">
+<rect width="1200" height="360" fill="#f5f8fc"/>
+<text x="30" y="50" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="30" fill="#17324d">오늘은 판단을 숫자 명령으로 연결해요</text>
+<rect x="30" y="90" width="340" height="190" rx="14" fill="#e4edff" stroke="#aabed5"/>
+<text x="50" y="133" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="25" fill="#17324d">입력 기록</text>
+<text x="50" y="176" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="24" fill="#17324d">거리 m / 시간 ms</text>
+<text x="50" y="212" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="24" fill="#17324d">Day15 결과 재사용</text>
+<text x="380" y="200" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="30" fill="#17324d">&gt;</text>
+<rect x="430" y="90" width="340" height="190" rx="14" fill="#fff0d8" stroke="#aabed5"/>
+<text x="450" y="133" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="25" fill="#17324d">판단과 명령</text>
+<text x="450" y="176" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="24" fill="#17324d">STOP 또는 GO</text>
+<text x="450" y="212" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="24" fill="#17324d">속도 m/s로 바꾸기</text>
+<text x="780" y="200" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="30" fill="#17324d">&gt;</text>
+<rect x="830" y="90" width="340" height="190" rx="14" fill="#e4f4ec" stroke="#aabed5"/>
+<text x="850" y="133" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="25" fill="#17324d">출력 기록</text>
+<text x="850" y="176" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="24" fill="#17324d">명령 속도 저장</text>
+<text x="850" y="212" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="24" fill="#17324d">아직 위치 변경 없음</text>
+<text x="30" y="331" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="22" fill="#17324d">속도 명령은 요청값이에요. 실제 속도를 측정한 값이 아니에요.</text>
+</svg>
