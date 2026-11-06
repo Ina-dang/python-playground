@@ -23,6 +23,7 @@
 | 2026-11-03 | Day15 센서 기록으로 정지 판단하기 | [교재 보기](day15-stop-decision/README.md) | [PDF 보기](https://drive.google.com/file/d/163GqIT_ILa5B_YT9gpOab-zmOXh89IKL/view?usp=drivesdk) |
 | 2026-11-04 | Day16 판단을 속도 명령으로 바꾸기 | [교재 보기](day16-velocity-command/README.md) | [PDF 보기](https://drive.google.com/file/d/1hEZwDtHSywnpJo7uKJwbUW1DdUX10mXv/view?usp=drivesdk) |
 | 2026-11-05 | Day17 명령으로 가상 로봇 움직이기 | [교재 보기](day17-motion-feedback/README.md) | [PDF 보기](https://drive.google.com/file/d/1oRmN5YHuFvuqQ4yXp5pTNnpPB__S2jjG/view?usp=drivesdk) |
+| 2026-11-06 | Day18 얼마나 자주 다시 판단할까? | [교재 보기](day18-decision-interval/README.md) | [PDF 보기](https://drive.google.com/file/d/1pw8EBUDs_njsAmv2gqnDAZAfMYANWiuu/view?usp=drivesdk) |
 
 ## 자료 구성
 

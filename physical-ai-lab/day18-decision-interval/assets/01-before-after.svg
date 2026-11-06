@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440">
+<rect width="1200" height="100%" rx="20" fill="#F3F7FC"/>
+<text x="30" y="48" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="30" fill="#17324D">한 행에는 서로 다른 두 순간이 들어 있어요</text>
+<rect x="30" y="85" width="340" height="245" rx="12" fill="#E1EDFF" stroke="#9CB3CD" stroke-width="2"/>
+<text x="48" y="127" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="27" fill="#17324D">이동 전 / t_s</text>
+<text x="48" y="175" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="20" fill="#17324D">x_m: 로봇 위치</text>
+<text x="48" y="220" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="20" fill="#17324D">front_m: 앞쪽 벽까지 거리</text>
+<text x="48" y="265" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="20" fill="#17324D"># 이 거리로 GO / STOP 결정</text>
+<rect x="430" y="85" width="340" height="245" rx="12" fill="#FFF0D9" stroke="#9CB3CD" stroke-width="2"/>
+<text x="448" y="127" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="27" fill="#17324D">한 번 움직이기</text>
+<text x="448" y="175" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="20" fill="#17324D">이동 거리 = 속도 × 시간</text>
+<text x="448" y="220" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="20" fill="#17324D">dt_s 동안 같은 속도 유지</text>
+<text x="448" y="265" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="20" fill="#17324D">중간에는 다시 판단하지 않아요</text>
+<rect x="830" y="85" width="340" height="245" rx="12" fill="#DFF3E9" stroke="#9CB3CD" stroke-width="2"/>
+<text x="848" y="127" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="27" fill="#17324D">이동 후 / next_t_s</text>
+<text x="848" y="175" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="20" fill="#17324D">next_x_m: 새 위치</text>
+<text x="848" y="220" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="20" fill="#17324D">next_front_m: 새 거리</text>
+<text x="848" y="265" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="20" fill="#17324D">다음 판단은 이 위치에서 시작</text>
+<text x="379" y="214" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="28" fill="#17324D">&gt;</text>
+<text x="780" y="214" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="28" fill="#17324D">&gt;</text>
+<text x="30" y="389" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="24" fill="#17324D">STOP이면 움직이지 않아요. 이 기록에서는 전 / 후 위치와 시간이 같아요.</text>
+</svg>
