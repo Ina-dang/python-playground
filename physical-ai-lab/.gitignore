@@ -32,3 +32,6 @@ Thumbs.db
 
 # Day19 개인 학습 타이머 (기록·백업 제외)
 /day19-time-distance-graphs/.study_timer/
+
+# Day20 개인 학습 타이머 제외
+/day20-matplotlib-time-distance/.study_timer/
