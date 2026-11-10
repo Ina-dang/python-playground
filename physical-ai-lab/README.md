@@ -27,6 +27,7 @@
 | 2026-11-07 | Day19 시간-거리 그래프 | [교재 보기](day19-time-distance-graphs/README.md) | [PDF 보기](https://drive.google.com/file/d/1GugMRaGRPO1WuOIAHC3Q8X8cOuuO9XO-/view?usp=drivesdk) |
 | 2026-11-08 | Day20 matplotlib 시간–거리 그래프 | [교재 보기](day20-matplotlib-time-distance/README.md) | [PDF 보기](https://drive.google.com/file/d/1rt8jj5yAf2EA7n2SmJLlaeWvt49hml7_/view?usp=drivesdk) |
 | 2026-11-09 | Day21 바닥 위치와 움직임 | [교재 보기](day21-xy-coordinates/README.md) | [PDF 보기](https://drive.google.com/file/d/1yaEMvWrXSO2plD5tFtiakgVv33o2ihYX/view?usp=drivesdk) |
+| 2026-11-10 | Day22 목표까지 남은 거리와 도착 판단 | [교재 보기](day22-goal-distance/README.md) | [PDF 보기](https://drive.google.com/file/d/1-ntUg4knarJ5YYWxMwPMObeMWlQ48yC9/view?usp=drivesdk) |
 
 ## 자료 구성
 
@@ -70,3 +71,7 @@ deactivate
 ## 커리큘럼
 
 [피지컬 AI 맞춤 학습 로드맵](curriculum/README.md) · [커리큘럼 PDF](https://drive.google.com/file/d/1ikdB95IZTMFIYb0LmbeQfK1HR2F-eeHP/view?usp=drivesdk)
+
+## 공통 학습 타이머
+
+Day22와 이후 교재는 [_shared의 공통 타이머와 중앙 테스트](_shared/README.md)를 재사용합니다. 기록은 각 교재의 .study_timer에 남고 Day19~21은 기존 방식을 유지합니다.

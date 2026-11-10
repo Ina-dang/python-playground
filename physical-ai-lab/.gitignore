@@ -38,3 +38,6 @@ Thumbs.db
 
 # Day21 개인 학습 타이머 제외
 /day21-xy-coordinates/.study_timer/
+
+# Day22 개인 학습 타이머 제외
+/day22-goal-distance/.study_timer/
