@@ -35,3 +35,6 @@ Thumbs.db
 
 # Day20 개인 학습 타이머 제외
 /day20-matplotlib-time-distance/.study_timer/
+
+# Day21 개인 학습 타이머 제외
+/day21-xy-coordinates/.study_timer/
