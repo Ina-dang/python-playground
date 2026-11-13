@@ -41,3 +41,9 @@ Thumbs.db
 
 # Day22 개인 학습 타이머 제외
 /day22-goal-distance/.study_timer/
+
+# Day23 개인 학습 타이머 기록 제외
+/day23-robot-integration/.study_timer/
+
+# Day24 개인 학습 타이머 기록 제외
+/day24-sensor-log-analysis/.study_timer/

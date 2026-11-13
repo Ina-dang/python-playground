@@ -28,6 +28,8 @@
 | 2026-11-08 | Day20 matplotlib 시간–거리 그래프 | [교재 보기](day20-matplotlib-time-distance/README.md) | [PDF 보기](https://drive.google.com/file/d/1rt8jj5yAf2EA7n2SmJLlaeWvt49hml7_/view?usp=drivesdk) |
 | 2026-11-09 | Day21 바닥 위치와 움직임 | [교재 보기](day21-xy-coordinates/README.md) | [PDF 보기](https://drive.google.com/file/d/1yaEMvWrXSO2plD5tFtiakgVv33o2ihYX/view?usp=drivesdk) |
 | 2026-11-10 | Day22 목표까지 남은 거리와 도착 판단 | [교재 보기](day22-goal-distance/README.md) | [PDF 보기](https://drive.google.com/file/d/1-ntUg4knarJ5YYWxMwPMObeMWlQ48yC9/view?usp=drivesdk) |
+| 2026-11-11 | Day23 센서와 목표 판단을 하나의 프로그램으로 연결하기 | [학습 노트북](day23-robot-integration/day23.ipynb) | [PDF 보기](https://drive.google.com/file/d/1xL0xiO6x31yJKQC-Ws0w5CHpbkdFF6Ck/view?usp=drivesdk) |
+| 2026-11-12 | Day24 센서 기록을 정리하고 다시 분석하기 | [학습 노트북](day24-sensor-log-analysis/day24.ipynb) | [PDF 보기](https://drive.google.com/file/d/1f9jl52bOhdiRTveJcjtXEbeS92NVj-aT/view?usp=drivesdk) |
 
 ## 자료 구성
 

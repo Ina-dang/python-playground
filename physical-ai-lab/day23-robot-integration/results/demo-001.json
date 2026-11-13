@@ -1,0 +1,254 @@
+{
+  "clear": {
+    "rows": [
+      {
+        "t_ms": 0,
+        "xy_m": [
+          0.0,
+          1.0
+        ],
+        "front_m": 3.5,
+        "remaining_m": 2.0,
+        "status": "GO",
+        "speed_mps": 0.5,
+        "next_xy_m": [
+          0.25,
+          1.0
+        ]
+      },
+      {
+        "t_ms": 500,
+        "xy_m": [
+          0.25,
+          1.0
+        ],
+        "front_m": 3.25,
+        "remaining_m": 1.75,
+        "status": "GO",
+        "speed_mps": 0.5,
+        "next_xy_m": [
+          0.5,
+          1.0
+        ]
+      },
+      {
+        "t_ms": 1000,
+        "xy_m": [
+          0.5,
+          1.0
+        ],
+        "front_m": 3.0,
+        "remaining_m": 1.5,
+        "status": "GO",
+        "speed_mps": 0.5,
+        "next_xy_m": [
+          0.75,
+          1.0
+        ]
+      },
+      {
+        "t_ms": 1500,
+        "xy_m": [
+          0.75,
+          1.0
+        ],
+        "front_m": 2.75,
+        "remaining_m": 1.25,
+        "status": "GO",
+        "speed_mps": 0.5,
+        "next_xy_m": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "t_ms": 2000,
+        "xy_m": [
+          1.0,
+          1.0
+        ],
+        "front_m": 2.5,
+        "remaining_m": 1.0,
+        "status": "GO",
+        "speed_mps": 0.5,
+        "next_xy_m": [
+          1.25,
+          1.0
+        ]
+      },
+      {
+        "t_ms": 2500,
+        "xy_m": [
+          1.25,
+          1.0
+        ],
+        "front_m": 2.25,
+        "remaining_m": 0.75,
+        "status": "GO",
+        "speed_mps": 0.5,
+        "next_xy_m": [
+          1.5,
+          1.0
+        ]
+      },
+      {
+        "t_ms": 3000,
+        "xy_m": [
+          1.5,
+          1.0
+        ],
+        "front_m": 2.0,
+        "remaining_m": 0.5,
+        "status": "GO",
+        "speed_mps": 0.5,
+        "next_xy_m": [
+          1.75,
+          1.0
+        ]
+      },
+      {
+        "t_ms": 3500,
+        "xy_m": [
+          1.75,
+          1.0
+        ],
+        "front_m": 1.75,
+        "remaining_m": 0.25,
+        "status": "GO",
+        "speed_mps": 0.5,
+        "next_xy_m": [
+          2.0,
+          1.0
+        ]
+      },
+      {
+        "t_ms": 4000,
+        "xy_m": [
+          2.0,
+          1.0
+        ],
+        "front_m": 1.5,
+        "remaining_m": 0.0,
+        "status": "ARRIVED",
+        "speed_mps": 0.0,
+        "next_xy_m": [
+          2.0,
+          1.0
+        ]
+      }
+    ],
+    "end_reason": "ARRIVED",
+    "final_xy_m": [
+      2.0,
+      1.0
+    ]
+  },
+  "blocked": {
+    "rows": [
+      {
+        "t_ms": 0,
+        "xy_m": [
+          0.0,
+          1.0
+        ],
+        "front_m": 0.9,
+        "remaining_m": 2.0,
+        "status": "GO",
+        "speed_mps": 0.5,
+        "next_xy_m": [
+          0.25,
+          1.0
+        ]
+      },
+      {
+        "t_ms": 500,
+        "xy_m": [
+          0.25,
+          1.0
+        ],
+        "front_m": 0.65,
+        "remaining_m": 1.75,
+        "status": "GO",
+        "speed_mps": 0.5,
+        "next_xy_m": [
+          0.5,
+          1.0
+        ]
+      },
+      {
+        "t_ms": 1000,
+        "xy_m": [
+          0.5,
+          1.0
+        ],
+        "front_m": 0.4,
+        "remaining_m": 1.5,
+        "status": "GO",
+        "speed_mps": 0.5,
+        "next_xy_m": [
+          0.75,
+          1.0
+        ]
+      },
+      {
+        "t_ms": 1500,
+        "xy_m": [
+          0.75,
+          1.0
+        ],
+        "front_m": 0.15000000000000002,
+        "remaining_m": 1.25,
+        "status": "STOP_OBSTACLE",
+        "speed_mps": 0.0,
+        "next_xy_m": [
+          0.75,
+          1.0
+        ]
+      }
+    ],
+    "end_reason": "STOP_OBSTACLE",
+    "final_xy_m": [
+      0.75,
+      1.0
+    ]
+  },
+  "short": {
+    "rows": [
+      {
+        "t_ms": 0,
+        "xy_m": [
+          0.0,
+          1.0
+        ],
+        "front_m": 3.5,
+        "remaining_m": 2.0,
+        "status": "GO",
+        "speed_mps": 0.5,
+        "next_xy_m": [
+          0.25,
+          1.0
+        ]
+      },
+      {
+        "t_ms": 500,
+        "xy_m": [
+          0.25,
+          1.0
+        ],
+        "front_m": 3.25,
+        "remaining_m": 1.75,
+        "status": "GO",
+        "speed_mps": 0.5,
+        "next_xy_m": [
+          0.5,
+          1.0
+        ]
+      }
+    ],
+    "end_reason": "STEP_LIMIT",
+    "final_xy_m": [
+      0.5,
+      1.0
+    ]
+  }
+}
